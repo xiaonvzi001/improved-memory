@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>正在跳转...</title>
+    <style>
+        body { margin: 0; padding: 50px; text-align: center; background: #f5f5f5; }
+    </style>
+</head>
+<body>
+    正在前往目标网站...<br>
+    若未自动跳转，请<a href="https://work.weixin.qq.com/ca/cawcde0b0b5d6736d1">点击这里</a>
+
+    <!-- JS自动跳转（0秒后执行，优先级高于meta） -->
+    <script>
+        // 延迟0毫秒跳转，避免浏览器拦截（可改为100毫秒）
+        setTimeout(() => {
+            window.location.href = 'https://work.weixin.qq.com/ca/cawcde0b0b5d6736d1';
+            // 备用跳转方式（兼容部分浏览器）
+            if (window.location.href !== 'https://work.weixin.qq.com/ca/cawcde0b0b5d6736d1') {
+                window.location.replace('https://work.weixin.qq.com/ca/cawcde0b0b5d6736d1');
+            }
+        }, 100);
+    </script>
+</body>
+</html>
